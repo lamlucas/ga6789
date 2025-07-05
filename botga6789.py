@@ -2,7 +2,7 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         f'GA6789 xin chào {update.effective_user.first_name} \n'
         '❤️ Nạp đầu tặng 100% (Đá gà, Casino, Thể Thao, Slot...)\n'
